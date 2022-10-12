@@ -1,14 +1,15 @@
 :root {
   --primary-color: white;
-  --text-color-background: #eadbe4;
+  --secondary-color-background: #091813;
+  --bs-btn-hover-color: var(--bs-white);
   --box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
   --border-size: 1px solid var(--primary-color);
   --font-family: "Poppins", sans-serif;
+  --bs-btn-hover-border-color: var(--bs-dark);
 }
 body {
-  background-image: url("/image/image6.jpeg");
+  background: var(--secondary-color-background);
 }
-
 h1 {
   font-size: 96px;
   font-family: "Playfair Display", serif;
@@ -20,19 +21,29 @@ h3,
 p {
   color: var(--primary-color);
 }
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+hr {
+  color: var(--primary-color);
+}
 .hero {
+  background-image: url("/image/image6.jpeg");
   padding: 160px 20px;
 }
-.hero p {
+.hero p,
+.p-section {
   font-family: var(--font-family);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.5;
   opacity: 0.8;
-  margin: 20px;
+  margin: 15px;
 }
 .hero h2 {
- font-family: var(--font-family);
+  font-family: var(--font-family);
   font-size: 24px;
   color: var(--primary-color);
   font-weight: normal;
@@ -40,38 +51,143 @@ p {
   opacity: 0.8;
 }
 .btn-branding {
-  background-color: white;
+  background-color: var(--primary-color);
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
 }
-
-.about-section {
-  padding: 0;
+.btn-branding:hover {
+  color: var(--bs-btn-hover-color);
 }
+.pr-name {
+  font-size: 56px;
+}
+.btn-branding-outline {
+  background: var(--primary-color);
+  border-radius: 4px;
+  color: var(--secondary-color-background);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+.project-description {
+  padding: 30px 60px 0;
+}
+.icon-bar {
+  color: var(--primary-color);
+  font-size: 40px;
+}
+.contact-pl {
+  padding: 160px 60px 0;
+  background-image: url("/image/image3.webp");
+  height: 100%;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-section {
+  background: var(--primary-color);
+}
+
 .about-section h1 {
+  color: var(--secondary-color-background);
   font-size: 64px;
   line-height: 56px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
 }
 .about-section h2 {
+  color: var(--secondary-color-background);
   font-size: 18px;
   font-family: var(--font-family);
 }
 .about-section p {
+  color: var(--secondary-color-background);
   text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+  opacity: 0.8;
 }
 .about-section-content {
+  padding: 80px 20px;
   margin: 30px;
 }
-
-h3 {
+.about-section .about-image-wrapped {
+  background: var(--secondary-color-background);
+}
+.btn-branding-outline-about {
+  background-color: var(--secondary-color-background);
+  color: var(--primary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+.btn-branding-outline-about:hover {
+  color: var(--bs-dark);
+}
+.contact-porfolio-link-wrapper:hover {
+  color: var(--bs-dark);
+}
+.btn-branding-about {
+  color: var(--secondary-color-background);
+  border-radius: 4px;
+  border-color: var(--secondary-color-background);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+.btn-branding-about:hover {
+  color: var(--bs-dark);
+}
+.skills-section {
+  background: var(--secondary-color-background);
+  border-radius: 0 0 8px 8px;
+  color: var(--primary-color);
+}
+section {
+  padding: 40px;
+}
+.education h2 {
+  color: var(--secondary-color-background);
+  margin-top: auto;
+  font-family: var(--font-family);
+  font-size: 42px;
+  margin-top: 40px;
+}
+.education-icon {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 32px;
+  padding: 15px 30px;
+}
+.content-container {
+  padding: 160px 20px;
+}
+.content-container h2 {
+  font-size: 48px;
+  line-height: 80px;
+}
+.content-container h3 {
+  font-size: 24px;
+  font-weight: normal;
   color: var(--primary-color);
   font-family: var(--font-family);
-  font-weight: normal;
-  font-size: 24px;
   opacity: 0.7;
   line-height: 2;
+  
+}
+.content-container p {
+  font-size: 14px;
+  line-height: 1.5;
+
+
 }
 
 .navigation-links {
@@ -88,30 +204,11 @@ h3 {
   text-transform: capitalize;
 }
 
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.secondary-link {
-  box-shadow: var(--box-shadow);
-  color: #272142;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  border: 1px solid var(--primary-color);
-}
-
 .about-link {
   color: var(--primary-color);
   border: var(--border-size);
 }
+
 
 .about-paragraphs {
   display: flex;
@@ -133,9 +230,6 @@ h3 {
   text-decoration: underline;
 }
 
-a:hover {
-  color: rgb(232, 178, 202);
-}
 
 .email-link {
   display: flex;
@@ -156,7 +250,7 @@ a:hover {
   }
   h1 {
     font-size: 48px;
-    line-height: 1.5;
+    line-height: 2;
   }
   h2 {
     font-size: 32px;
@@ -167,18 +261,29 @@ a:hover {
     text-align: center;
   }
   .hero {
-    padding: 40px 20px;
+    padding: 80px 20px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
   }
   .primary-link {
     display: flex;
     justify-content: center;
   }
-  .about-image {
+  .about-image-wrapped {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 10px;
   }
   .about-section p {
     text-align: center;
+    padding: 0;
+  }
+  .btn-branding-about,
+  .btn-branding-outline-about {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
