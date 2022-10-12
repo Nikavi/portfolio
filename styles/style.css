@@ -238,6 +238,38 @@ footer {
 strong {
   color: var(--primary-color);
 }
+.logo {
+  font-weight: bolder;
+  color:var(--primary-color);
+}
+nav {
+  padding: 20px 0;
+  color: var(--primary-color);
+  font-family: "Playfair Display", serif;
+   font-weight: bold;
+   font-size: 28px;
+}
+nav ul {
+ padding: 0;
+ margin: 0;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+ line-height: 42px;
+ margin-left: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+ 
+a.active,
+nav a:hover {
+   color:aquamarine;
+  text-decoration: underline;
+}
 @media (max-width: 800px) {
   .home-image {
     display: none;
@@ -285,5 +317,8 @@ strong {
     justify-content: center;
     padding: 0;
     margin-top: 20px;
+  }
+  .logo {
+    font-size: 22px;
   }
 }
