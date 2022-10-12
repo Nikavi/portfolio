@@ -216,15 +216,6 @@ section {
 .cv-link:hover {
    color: var(--bs-btn-hover-color);
 }
-
-
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
 .email-link {
   display: flex;
   justify-content:flex-end;
@@ -233,10 +224,10 @@ section {
   text-decoration: none;
   cursor: pointer;
 }
-
 .email-link:hover {
   font-size: 32px;
   text-decoration: underline;
+  color: var(--primary-color);
 }
 @media (max-width: 800px) {
   .home-image {
@@ -279,5 +270,11 @@ section {
   .btn-branding-outline-about {
     display: flex;
     justify-content: space-evenly;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 20px;
   }
 }
