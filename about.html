@@ -25,28 +25,33 @@
 </head>
 
 <body cz-shortcut-listen="true">
- 
-  <div class="container">
-    <nav class="d-flex justify-content-between text-color-light">
-  <a href="/" title="Homepage" class="logo">
-<i class="fa-solid fa-house "></i></a>
-  <ul >
-    <li >
-      <a class="nav-link" aria-current="page" href="/">Home</a>
-    </li>
-    <li>
-      <a class="nav-link active" aria-current="page" href="/about.html" title="page about Veronika">About</a>
-    </li>
-    <li>
-      <a class="nav-link" href="/work.html" title="page about projects">Portfolio</a>
-    </li>
-    <li>
-      <a class="nav-link" href="/contact.html" title="contact with Veronika">Contact</a>
-    </li>
-  </ul>
-  </nav>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-none">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <i class="fa-solid fa-house "></i>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/about.html" title="page about Veronika">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/work.html" title="page about projects">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html" title="contact with Veronika">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
- 
+</nav>
   <div class="about-section container">
     <div class="row">
       <div class="col-lg-7 d-flex align-items-center">
@@ -75,11 +80,11 @@
           <div class="container">
             <div class="row contact-porfolio-link-wrapper">
               <div class="col-6 d-flex justify-content-evenly">
-                <a href="/contact.html#contact" class="btn btn-branding-about" title="contact with Veronika">Let's
+                <a href="/contact.html#contact" class="btn btn-branding" title="contact with Veronika">Let's
                   chat!</a>
               </div>
               <div class="col-6 d-flex justify-content-evenly">
-                <a href="/work.html" class="btn btn-branding-outline-about" title="page of projects">See my work</a>
+                <a href="/work.html" class="btn btn-branding-outline" title="page of projects">See my work</a>
               </div>
             </div>
           </div>
@@ -124,15 +129,15 @@
           <i class="fa-solid fa-flask"></i>
           <p>Flask</p>
         </div>
-        <div class="col-md mt-5 text-center text-color-light icon-bar">
-          <i class="fa-solid fa-c"></i>
+        <div class="col mt-5 text-center text-color-light icon-bar">
+        <i class="fa-solid fa-c"></i>
           <p>C language</p>
         </div>
       </div>
     </div>
   </div>
   </div>
-  <section class="education bg-light">
+  <section class="education bg-light rounded ">
     <h2 class="education text-center"> Education </h2>
     <div class="container-fluid education-icon">
       <div class="row">
