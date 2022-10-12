@@ -79,9 +79,12 @@ hr {
 .project-description {
   padding: 30px 60px 0;
 }
-.icon-bar {
+.icon-bar a{
   color: var(--primary-color);
   font-size: 40px;
+}
+.icon-bar a:hover {
+  font-size: 48px;
 }
 .contact-pl {
   padding: 160px 60px 0;
@@ -227,6 +230,12 @@ section {
 .email-link:hover {
   font-size: 32px;
   text-decoration: underline;
+  color: var(--primary-color);
+}
+footer {
+  color: var(--primary-color);
+}
+strong {
   color: var(--primary-color);
 }
 @media (max-width: 800px) {
