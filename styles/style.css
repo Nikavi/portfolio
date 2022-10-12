@@ -50,6 +50,11 @@ hr {
   line-height: 2;
   opacity: 0.8;
 }
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
 .btn-branding {
   background-color: var(--primary-color);
   border-radius: 4px;
@@ -181,20 +186,37 @@ section {
   font-family: var(--font-family);
   opacity: 0.7;
   line-height: 2;
-  
 }
 .content-container p {
   font-size: 14px;
   line-height: 1.5;
-
-
 }
-
-.navigation-links {
-  display: flex;
+.contact-container {
+    background-image: url("/image/co.webp");
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    padding: 0;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navigation-cv-link {
+ display: flex;
   margin-top: 40px;
-  justify-content: center;
+  justify-content:flex-end;
 }
+.cv-link {
+   background-color: var(--primary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+.cv-link:hover {
+   color: var(--bs-btn-hover-color);
+}
+
 
 .navigation-links a {
   margin: 20px;
@@ -203,37 +225,9 @@ section {
   text-decoration: none;
   text-transform: capitalize;
 }
-
-.about-link {
-  color: var(--primary-color);
-  border: var(--border-size);
-}
-
-
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-.about-paragraphs img {
-  padding: 40px;
-  margin-top: 50px;
-}
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-
 .email-link {
   display: flex;
-  justify-content: center;
+  justify-content:flex-end;
   color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
