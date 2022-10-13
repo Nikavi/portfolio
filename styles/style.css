@@ -31,7 +31,7 @@ hr {
 }
 .hero {
   background-image: url("/image/image6.jpeg");
-  padding: 160px 20px;
+  padding: 110px 10px;
 }
 .hero p,
 .p-section {
@@ -87,7 +87,7 @@ hr {
   font-size: 48px;
 }
 .contact-pl {
-  padding: 160px 60px 0;
+  padding: 80px 20px 0;
   background-image: url("/image/image3.webp");
   height: 100%;
   height: 100vh;
@@ -180,7 +180,7 @@ section {
   color: darkslategrey;
 }
 .content-container {
-  padding: 140px 20px;
+  padding: 80px 20px;
 }
 .content-container h2 {
   font-size: 48px;
@@ -199,11 +199,11 @@ section {
   font-size: 14px;
   line-height: 1.5;
 }
-.icon-bar-open {
+.icon-bar-open a {
  color: var(--primary-color);
   font-size: 40px;
 }
-.icon-bar-open:hover {
+.icon-bar-open a:hover {
   font-size: 48px;
 }
 .contact-container {
@@ -324,12 +324,17 @@ nav a:hover {
     display: flex;
     justify-content: space-evenly;
   }
-  .contact-container {
+  .contact-container h2,
+  h3 {
     display: flex;
     justify-content: center;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 28px;
   }
+   .contact-container a {
+    font-size: 18px;
+   }
   .logo {
     font-size: 22px;
   }
