@@ -30,25 +30,32 @@
     <a class="navbar-brand" href="/">
       <i class="fa-solid fa-house "></i>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+      aria-controls="offcanvasDarkNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/about.html" title="page about Veronika">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/work.html" title="page about projects">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact.html" title="contact with Veronika">Contact</a>
-        </li>
-      </ul>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+      aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Guide</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/about.html" title="Veronika story">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/work.html" title="Projects page">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html" title="Contact with Veronika">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
@@ -80,11 +87,11 @@
           <div class="container">
             <div class="row contact-porfolio-link-wrapper">
               <div class="col-6 d-flex justify-content-evenly">
-                <a href="/contact.html#contact" class="btn btn-branding" title="contact with Veronika">Let's
+                <a href="/contact.html#contact" class="btn btn-branding" title="Contact with Veronika">Let's
                   chat!</a>
               </div>
               <div class="col-6 d-flex justify-content-evenly">
-                <a href="/work.html" class="btn btn-branding-outline" title="page of projects">See my work</a>
+                <a href="/work.html" class="btn btn-branding-outline-secondary-link" title="Page of projects">See my work</a>
               </div>
             </div>
           </div>
@@ -141,15 +148,15 @@
     <h2 class="education text-center"> Education </h2>
     <div class="container-fluid education-icon">
       <div class="row">
-        <div><i class="fa-solid fa-graduation-cap"></i> Interregional Academy of Personnel Management:Master's degree of
-          Foreign Economic Activity Management</div>
-        <div><i class="fa-solid fa-book-open"></i> Interregional Academy of Personnel Management:Bachelor's degree of
-          Financial manager</div>
-        <div><i class="fa-solid fa-laptop-code"></i> CS50: Introduction to computer science(in process)</div>
-        <div><i class="fa-solid fa-code"></i> SheCodes: Introduction to Coding</div>
-        <div><i class="fa-regular fa-file-code"></i> SheCodes: Front-end Development</div>
-        <div><i class="fa-solid fa-gears"></i> SheCodes: Responsive Web Development</div>
-        <div><i class="fa-brands fa-react"></i> SheCodes: React (in process)</div>
+        <div><i class="fa-solid fa-graduation-cap"></i> <a href="https://maup.com.ua/eng/index.html" title="MAUP University" class="educ-link" target="_blank">Interregional Academy of Personnel Management:Master's degree of
+          Foreign Economic Activity Management</a></div>
+        <div><i class="fa-solid fa-book-open"></i> <a href="https://www.linkedin.com/school/interregional-academy-of-personnel-management/" title="MAUP University" class="educ-link" target="_blank"> Interregional Academy of Personnel Management:Bachelor's degree of
+          Financial manager</a></div>
+        <div><i class="fa-solid fa-laptop-code"></i><a href="https://cs50.harvard.edu/x/2022/" title="CS50:Harvard courses" class="educ-link" target="_blank"> CS50: Introduction to computer science(in process) </a></div>
+        <div><i class="fa-solid fa-code"></i><a href="https://www.shecodes.io/workshops" title="SheCodes courses" class="educ-link" target="_blank"> SheCodes: Introduction to Coding</a></div>
+        <div><i class="fa-regular fa-file-code"></i><a href="https://www.shecodes.io/free-class" title="SheCodes courses" class="educ-link" target="_blank"> SheCodes: Front-end Development</a></div>
+        <div><i class="fa-solid fa-gears"></i><a href="https://www.shecodes.io/learn/workshops" title="SheCodes courses" class="educ-link" target="_blank"> SheCodes: Responsive Web Development</a></div>
+        <div><i class="fa-brands fa-react"></i><a href="https://www.shecodes.io/max-bundle" title="SheCodes courses" class="educ-link" target="_blank">SheCodes: React (in process)</a></div>
       </div>
     </div>
   </section>
