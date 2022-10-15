@@ -173,7 +173,7 @@ section {
   padding: 15px 30px;
 }
 .educ-link {
-  color:var(--secondary-color-background);
+  color: var(--secondary-color-background);
   transition: all 100ms ease-in-out;
 }
 .educ-link:hover {
@@ -200,7 +200,7 @@ section {
   line-height: 1.5;
 }
 .icon-bar-open a {
- color: var(--primary-color);
+  color: var(--primary-color);
   font-size: 40px;
 }
 .icon-bar-open a:hover {
@@ -332,9 +332,9 @@ nav a:hover {
     margin-top: 30px;
     font-size: 28px;
   }
-   .contact-container a {
+  .contact-container a {
     font-size: 18px;
-   }
+  }
   .logo {
     font-size: 22px;
   }
